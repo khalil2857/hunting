@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css.css" />
+  
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/intlTelInput.css" rel="stylesheet"/>
+    <script src="js/jquery.min.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script src="js/defaultCountryIp.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+                <header>
+                    <nav>
+                        <div class="love-icon">
+                            <i class="fa fa-bars-2x"></i>
+                        </div>
+                         <div class="logo">
+                             HUNT
+                         </div>
+                         <div class="love">
+                             <ul>
+                                 <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20Page1/page%201.html">Home</a></li>
+                                 <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20page2/page%202.html">Weapons</a></li>
+                                 <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20page%203/page3.html">Places</a></li>
+                                 <li><a href="file:///C:/Users/Bochra/Desktop/my%20project%20page4/page4.html">Animals</a></li>
+                                 
+                                 <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20page%206/home.html">Contact US</a></li>
+                             </ul>
+                         </div>
+                    </nav>
+                </header>
+          
+            </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="loginbox">
+        <img src="res/avatar.png" class="avatar">
+        <br>
+        <br>
+        <h1><center>Contact US</center></h1>
+        <p><center>Get answers to all your questions about our online service here</center></p>
+        <form onsubmit="submitForm" id="Form" name="form" >
+            <center><P> Name </P>
+            <input type="text" name="Form" placeholder="Name" id="name">
+            <p> Surname</p>
+            <input type="text" name="form" placeholder="Surname" id="surname">
+             <p> Phone Number</p>
+             <input type="tel" id="hp">
+             
+             <p>Message</p>
+             <input type="message" placeholder="Write your message" id="msg">
+             <br>
+             <br>
+             <input class="ok" type="submit" name="" value="Send">
+            </center>
+             
+            
+           
+
+        </form>
+        <br>
+        <br>
+        <div id="lol">
+        <center><img src="appel.png" style="padding-left: 20px;"> 
+        <font color="black" ><h2  style="padding-left: 20px;"> +216-99 888 777</h2></font>
+    </center>
+    </div>
+             
+
+    </div>
+    <footer >
+        <div class="copyright">
+              <br>
+              <p style="color:aliceblue;" id="tt"> © 2018 Copyright. ALL Rights Reserved </p>
+              <li id="bb" class="scroll" >
+                          <a id="fb" class="fa fa-facebook" href="#"></a>
+                          <a id="inst" class="fa fa-instagram" href="#"></a>
+                          <a id="yt" class="fa fa-youtube" href="#"></a>
+  
+                    </li>
+                    
+        </div>
+        </footer>
+        <script src="Js/js.js"></script>
+        <script>
+        $('#hp').intlTelInput({
+            initialCountry: "auto",
+            geoIpLookup: function(callback){
+                $.get('http://ipinfo.io', function(){}, "jsonp").always(function(resp){
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "js/utils.js"
+        });
+        </script>
+          <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+</body>
+
+</html>

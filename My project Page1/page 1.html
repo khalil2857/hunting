@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hunter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="C:\Users\Bochra\Desktop\My project Page1\page1.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="C:\Users\Bochra\Desktop\My project Page1\page 1.js"></script>
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <header>
+
+              <nav>
+
+                    <div class="menu-icon">
+                          <i class="fa fa-bars fa-2x"></i>
+                    </div>
+
+                    <div class="logo">
+                         <img src="logo.jpg" width= "70px"
+                         height= "70px">
+                    </div>
+
+                    <div class="menu">
+                          <ul>
+                                <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20Page1/page%201.html">Home</a></li>
+                                <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20page2/page%202.html">weapons</a></li>
+                                <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20page%203/page3.html">Places</a></li>
+                                <li><a href="file:///C:/Users/Bochra/Desktop/my%20project%20page4/page4.html">Animals</a></li>
+                                   
+                                <li><a href="file:///C:/Users/Bochra/Desktop/My%20project%20page%206/home.html">Contact US</a></li>
+                                   </ul>
+                    </div>
+              </nav>
+
+        </header>
+
+        <div class="content">
+              <h2> <center> The history of hunting </center>
+              </h2>
+              <p>
+                Hunting first appeared three million years ago and has remained with us ever since, alongside other food-producing activities such as farming livestock. In the Middle Ages, hunting was the privilege of the nobility, linked with the right to land ownership. After the French Revolution, it was democratised extensively, which lead to considerable damage to the forest ecosystem. It has since become mainly a leisure activity and is now governed by strict laws to protect wildlife and its environment.
+              </p> 
+              <h2><center>From necessity to a leisure activity</center></h2>
+              <p>
+                The first human beings lived a nomadic lifestyle and introduced meat to their diet about 3 million years ago. They first ate animals . Later, as they began to look for prey, they devised hunting techniques using rudimentary weapons and stratagems.
+
+                After a long time it became part of a  humans hobbies with a new generation of weapons  and  became a famous  activity  in Tunisia.
+              </p>
+              
+              <div> 
+                    <br>
+                    <br>   
+              <img  id="lc"    src="chasse2.jpg" width="500px" >
+              <iframe id="lcc" width="560" height="315" src="https://www.youtube.com/embed/LmI4KYdWHTc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <br>
+          <br>
+         
+
+        </div>
+  </div>
+  
+
+  <footer>
+        <div class="copyright">
+                <br>
+                <p style="color:aliceblue;" id="tt"> © 2018 Copyright. ALL Rights Reserved </p>
+                <li id="bb" class="scroll" >
+                            <a id="fb" class="fa fa-facebook" href="#"></a>
+                            <a id="inst" class="fa fa-instagram" href="#"></a>
+                            <a id="yt" class="fa fa-youtube" href="#"></a>
+    
+                      </li>
+                      
+          </div>
+  </footer>
+ 
+    
+
+    
+
+
+  
+
+  <script type="text/javascript">
+
+  // Menu-toggle button
+
+  $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+              $("nav ul").toggleClass("showing");
+        });
+  });
+
+  // Scrolling Effect
+
+  $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+              $('nav').addClass('black');
+        }
+
+        else {
+              $('nav').removeClass('black');
+        }
+  })
+
+
+  </script>
+</body>
+</html>

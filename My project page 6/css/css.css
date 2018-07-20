@@ -1,0 +1,11 @@
+@font-face {
+    font-family: la;
+    src: url('../Acaton/fonts/skratch.otf');
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: la; 
+    
+}
